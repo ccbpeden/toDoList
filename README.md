@@ -19,13 +19,12 @@ _This application allows the user to add tasks to a list, view the list of tasks
 
 ## Setup/Installation Requirements
 
-* _Clone this application at [https://github.com/danlauby/Ping-Pong](https://github.com/danlauby/Ping-Pong)_
-* _Locate index.html file within ping-pong directory_
+* _Clone this application at [https://github.com/danlauby/to-do-list.git](https://github.com/danlauby/to-do-list.git)_
+* _Locate index.html file within to-do-list directory_
 * _Open index.html in preferred browser_
-* _Enter random number_
-* _Get your results_
+* _Enter tasks, complete tasks, remove tasks_
 
-_Only a web browser is necessary to play_
+_Only a web browser is necessary to operate_
 
 ## Known Bugs
 
@@ -44,4 +43,4 @@ _Please contact me at [https://github.com/danlauby](https://github.com/danlauby)
 
 *MIT*
 
-Copyright (c) 2017 **_Dan Lauby_**
+Copyright (c) 2017 **_Dan Lauby & Charles Peden_**
