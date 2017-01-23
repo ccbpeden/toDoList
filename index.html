@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <h1>Add a Task:</h1>
+      <form id="inputTask">
+        <div class="form-group">
+          <label for="taskDescription">Description</label><input class="form-control" id="taskDescription" type="text" name="description">
+          <label for="taskDueDate">Due Date</label><input class="form-control" id="taskDueDate" type="text" name="due-date">
+          <button class="btn" type="submit" name="button">Add Task</button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <h1>To do List:</h1>
+      <ol id="taskList">
+      </ol>
+    </div>
+  </div>
+  </body>
+</html>
