@@ -14,8 +14,9 @@
       <h1>Add a Task:</h1>
       <form id="inputTask">
         <div class="form-group">
-          <label for="taskDescription">Description</label><input class="form-control" id="taskDescription" type="text" name="description">
-          <label for="taskDueDate">Due Date</label><input class="form-control" id="taskDueDate" type="date" name="due-date">
+          <label for="taskName">Task Name:</label><input class="form-control" id="taskName" type="text" name="name">
+          <label for="taskDescription">Description:</label><input class="form-control" id="taskDescription" type="text" name="description">
+          <label for="taskDueDate">Due Date:</label><input class="form-control" id="taskDueDate" type="date" name="due-date">
           <button class="btn" type="submit" name="button">Add Task</button>
         </div>
       </form>
@@ -24,6 +25,10 @@
       <h1>To do List:</h1>
       <ol id="taskList">
       </ol>
+    </div>
+    <div id="show-tasks">
+      <p>Task Description: <span class="description"></span></p>
+      <p>Task Due Date: <span class="dueDate"></span></p>
     </div>
   </div>
   </body>
