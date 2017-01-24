@@ -7,6 +7,7 @@ function Tasks (taskName, taskDescription, taskDueDate, taskCompleted) {
   this.taskCompleted = taskCompleted;
 };
 
+var anotherTask;
 
 //front end logic
 $(function(){
@@ -18,12 +19,17 @@ $(function(){
 
     var newTask = new Tasks(inputtedTaskName, inputtedTaskDescription, inputtedtaskDueDate, false);
 
-    $("ol#taskList").append("<li><span class='currentTask'> " + newTask.taskName + "</span></li>");
+    $("ol#taskList").append("<li id='" + newTask.taskName + "'><span class='currentTask'> " + newTask.taskName + "</span></li>");
 
     $(".currentTask").last().click(function(){
-      $("#show-tasks").show();
+      $("#show-tasks").toggle();
       $(".description").text(newTask.taskDescription);
       $(".dueDate").text(newTask.taskDueDate);
+      anotherTask = newTask;
     });
+  });
+  $('button#delete').click(function() {
+   $('#show-tasks').toggle();
+   $("#"+anotherTask.taskName).remove();
   });
 });
